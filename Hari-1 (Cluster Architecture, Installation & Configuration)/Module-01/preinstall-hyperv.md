@@ -26,7 +26,7 @@ Set IP Default Gateway: 192.168.5.1
 
 ### Configure a NAT Network via Power Shell (as administrator), enabling the k8s subnet to access Internet.
 ```
-New-NetNAT -Name “ natK8sCluster” -InternalIPInterfaceAddressPrefix 192.168.5.0/24
+New-NetNAT -Name “natK8sCluster” -InternalIPInterfaceAddressPrefix 192.168.5.0/24
 ```
 
 ### Set Up HyperV VM
