@@ -48,6 +48,8 @@ install operator calico
 ```
 kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.29.1/manifests/tigera-operator.yaml
 curl https://raw.githubusercontent.com/projectcalico/calico/v3.29.1/manifests/custom-resources.yaml -O
+vi custom-resources.yaml
+## edit IP range to 10.100.0.0/16
 kubectl create -f custom-resources.yaml
 ```
 
