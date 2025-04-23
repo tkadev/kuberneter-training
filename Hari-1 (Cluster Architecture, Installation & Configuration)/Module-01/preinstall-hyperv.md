@@ -29,16 +29,16 @@ Set IP Default Gateway: 192.168.5.1
 New-NetNAT -Name “ natK8sCluster” -InternalIPInterfaceAddressPrefix 192.168.5.0/24
 ```
 
-Set Up HyperV VM
+### Set Up HyperV VM
 
-### Select Generation 2 VM
-### Deselect Dynamic Memory
-### Assign RAM 2048 MiB minimal, recommended 4096 MiB
-### Choose Internal vSwitch (vs_k8sCluster)
-### Create the virtual hard disk (.vhdx) and give it a size of 20 GiB
-### Search and use the ubuntu ISO, Boot VM
-### If Boot VM failed, disable Secure Boot
-### Set IP (for master node)
+1. Select Generation 2 VM
+2. Deselect Dynamic Memory
+3. Assign RAM 2048 MiB minimal, recommended 4096 MiB
+4. Choose Internal vSwitch (vs_k8sCluster)
+5. Create the virtual hard disk (.vhdx) and give it a size of 20 GiB
+6. Search and use the ubuntu ISO, Boot VM
+7. If Boot VM failed, disable Secure Boot
+8. Set IP (for master node)
 ```
 Subnet 192.168.5.0/24
 IP: 192.168.5.10
